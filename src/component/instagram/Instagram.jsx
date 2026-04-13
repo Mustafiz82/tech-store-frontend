@@ -53,8 +53,9 @@ const Instagram = () => {
  
 
     return (
-        <div  className='   xl:px-40 lg:px-28 sm:px-20 px-5'>
-            <div  className=' grid lg:grid-cols-6 md:grid-cols-4 gap-1 my-12 '>
+        <div  className='   xl:px-40 lg:px-28 sm:px-20 px-5 my-12'>
+          <p  className='font-bold Poppins'>Follow us on Instagram for News, Offers & More</p>
+            <div  className=' grid lg:grid-cols-6 md:grid-cols-4 gap-1  '>
 
                 {
           instagram?.slice(0,9).map(data=> (

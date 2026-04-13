@@ -1,8 +1,12 @@
 "use client";
-
+import Button from "@/component/button/Button";
 import React from 'react';
 
  const Footer = () => {
+
+     const handleClick = () => {
+    alert("Clicked!");
+  };
     return (
         <div className='bg-black  w-full h-full'>
          <div className="  my-10  xl:px-40 lg:px-28 sm:px-20 px-5" >
@@ -19,13 +23,13 @@ import React from 'react';
                                      <input
                                      type="text"
                                      placeholder=" Your email"
-                                     className="outline-none  lg:h-9 lg:w-96 h-9 w-46 text-sm"
+                                     className="outline-none  lg:h-9 lg:w-96 h-9 w-46 text-sm "
                                    />
                                    </div>
                                  
                                  </div>
                                  <div className='pl-4'>
-                                      <button className='bg-blue-700 text-white  rounded-4xl  h-12 w-36'>Subscribe</button>
+                                    <Button text="Subscribe" className="h-12 w-36" onClick={handleClick} />
                                   </div>
                      </div>
                             

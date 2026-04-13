@@ -1,19 +1,21 @@
 
 import Support from "@/component/Footer/Support";
+import Hero from "@/component/Header/Hero/Hero";
 import Images from "@/component/instagram/Images";
 import Instagram from "@/component/instagram/Instagram";
+import ProductCard from "@/component/productCard/ProductCard";
+
 import Review from "@/component/Review/Review";
-import Slider from "@/component/slider/Slider";
-import Image from "next/image";
+
 
 export default function Home() {
   return <div>
-   <div  className=" h-[100vh]">
+   <div>
 
 
    </div>
-    <Slider></Slider>
-
+    <Hero></Hero>
+     <ProductCard></ProductCard>
     {/* images section */}
     <Images></Images>
     {/* instagram section */}

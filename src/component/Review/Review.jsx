@@ -2,7 +2,9 @@
  
  import React from 'react';
 
+
 const Review = () => {
+   
     return (
         <div className=' xl:px-40 lg:px-28 sm:px-20 px-5'>
             <div className='sm:py-15 py-7 sm:px-20 px-10  bg-[#F5F7FF]'>
@@ -15,6 +17,7 @@ const Review = () => {
                 </div>
                 <div className='flex justify-between items-center'>
                       <div className='mt-3'>
+                       
                          <button className='text-blue-700 border-2 border-blue px-5 py-2  font-bold  rounded-4xl '>Leave Us A Review</button>
                       </div>
                       <div>
