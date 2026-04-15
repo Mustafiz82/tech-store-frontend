@@ -139,7 +139,7 @@ const CategoryOne = () => {
       <img
         src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
         alt="Custom Builds"
-        fill
+        
         className="object-cover w-full"
       />
 

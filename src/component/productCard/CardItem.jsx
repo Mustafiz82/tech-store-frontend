@@ -109,7 +109,7 @@ const CardItem = () => {
       <div className=" grid md:grid-cols-5 gap-16 mt-5 ">
 
 
-       <div className="relative h-[346px] w-[229px] ">
+       <div className="relative  hidden md:block h-[346px] w-[229px] ">
      <img
       src="./products/aside1.png"
       className="h-[346px] md:w-[229px]  object-cover rounded-xl"
@@ -127,8 +127,35 @@ const CardItem = () => {
               </p>
          </div>
 
-     </div>
-</div>
+       </div>
+    </div>
+          {/* mobile */}
+         <div className="relative w-full h-[250px] md:hidden rounded-xl overflow-hidden">
+      
+      {/* Image */}
+      <img
+        src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
+        alt="Custom Builds"
+        fill
+        className="object-cover"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center">
+        
+        <h2 className="text-white text-xl md:text-2xl font-bold">
+          Custome Builds
+        </h2>
+
+        <a
+          href="/products"
+          className="text-white text-sm mt-2 underline hover:text-gray-300 transition"
+        >
+          See All Products
+        </a>
+
+      </div>
+    </div>
 
         {/* Products */}
         <div className=" col-span-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">

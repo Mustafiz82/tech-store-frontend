@@ -111,7 +111,7 @@ const CategoryTwo = () => {
       <div className="grid md:grid-cols-5 gap-5">
 
         {/* Left Banner */}
-        <div className="relative col-span-1 h-[346px] md:w-[229px] ">
+        <div className="relative  hidden md:block col-span-1 h-[346px] md:w-[229px] ">
           <img
             src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
             alt="banner"
@@ -131,6 +131,34 @@ const CategoryTwo = () => {
             </div>
           </div>
         </div>
+
+             {/* mobile */}
+         <div className="relative w-full h-[250px] md:hidden rounded-xl overflow-hidden">
+      
+      {/* Image */}
+      <img
+        src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
+        alt="Custom Builds"
+        
+        className="object-cover w-full"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center">
+        
+        <h2 className="text-white text-xl md:text-2xl font-bold">
+          Custome Builds
+        </h2>
+
+        <a
+          href="/products"
+          className="text-white text-sm mt-2 underline hover:text-gray-300 transition"
+        >
+          See All Products
+        </a>
+
+      </div>
+    </div>
 
         {/* Products */}
         <div className="col-span-4 grid grid-cols-2 lg:grid-cols-5 gap-5">
