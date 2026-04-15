@@ -31,3 +31,9 @@ body {
   width:11px !important;
 
 }
+
+.swiper-slide{
+  padding: 5px !important;
+  gap:1px !important;
+  
+}
