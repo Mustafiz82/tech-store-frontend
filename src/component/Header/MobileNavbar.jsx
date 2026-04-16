@@ -1,15 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, ShoppingCart, User, Search, X } from "lucide-react";
+import { Menu, ShoppingCart, User, Search, X} from "lucide-react";
+
 
 const MobileNavbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
+    <div className=" ">
       {/* Navbar */}
-      <div className="bg-blue-600 px-4 py-3 flex items-center gap-3">
+      <div className="bg-blue-600 xl:px-40 lg:px-28 sm:px-20 px-5 py-5 flex items-center gap-3">
 
         {/* Menu Icon */}
         <Menu
@@ -74,7 +75,9 @@ const MobileNavbar = () => {
           className="fixed inset-0 bg-black/40 z-40"
         ></div>
       )}
-    </>
+    </div>
+
+    
   );
 };
 

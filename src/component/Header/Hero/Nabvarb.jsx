@@ -3,14 +3,14 @@
 
 import { Search, ShoppingCart } from "lucide-react";
 
-const DesktopNavbar = () => {
+const Navbarb = () => {
   return (
-    <div className="hidden  md:flex items-center justify-between px-6 lg:px-12 py-4 bg-white shadow-sm">
+    <div className="hidden border-b-gray-00  md:flex items-center justify-between py-4  xl:px-40 lg:px-28 sm:px-20 px-5 bg-white shadow-sm">
 
       {/* Left: Logo */}
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">
-          ⬛
+        <div className="w-10 h-10flex items-center justify-center  font-bold">
+          <img src="./icon/1.png" alt="" />
         </div>
       </div>
 
@@ -25,12 +25,12 @@ const DesktopNavbar = () => {
         <a href="#">Repairs</a>
 
         {/* Deals Button */}
-        <Link
-          href="#"
+        <a
+          href="src/component/Login/LoginPage.jsx"
           className="ml-2 px-4 py-1 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition"
         >
           Our Deals
-        </Link>
+        </a>
       </div>
 
       {/* Right: Icons */}
@@ -58,4 +58,4 @@ const DesktopNavbar = () => {
   );
 };
 
-export default DesktopNavbar;
+export default Navbarb;

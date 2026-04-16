@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/component/Header/Navbar";
 import Footer from "@/component/Footer/Footer";
 import MobileNavbar from "@/component/Header/MobileNavbar";
+import Support from "@/component/Footer/Support";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,11 +35,12 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbar>
         <MobileNavbar></MobileNavbar>
-        <DesktopNavbar></DesktopNavbar>
+     
         </Navbar>
         <main>
           {children}
         </main>
+           <Support></Support>
         <Footer></Footer>
         </body>
     </html>

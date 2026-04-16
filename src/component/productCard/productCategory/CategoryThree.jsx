@@ -83,7 +83,7 @@ const CategoryThree = () => {
         {/* Left Banner */}
         <div className="relative hidden md:block col-span-1 h-[346px] md:w-[229px] ">
           <img
-            src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
+            src="./products/aside1.png"
             alt="banner"
             
             className="object-cover h-[346px] md:w-[229px] rounded-xl"
@@ -107,7 +107,7 @@ const CategoryThree = () => {
       
       {/* Image */}
       <img
-        src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
+        src="public/products/aside1.png"
         alt="Custom Builds"
         fill
         className="object-cover"

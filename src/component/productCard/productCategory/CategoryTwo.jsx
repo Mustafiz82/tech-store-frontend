@@ -113,7 +113,7 @@ const CategoryTwo = () => {
         {/* Left Banner */}
         <div className="relative  hidden md:block col-span-1 h-[346px] md:w-[229px] ">
           <img
-            src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
+            src="./products/aside1.png"
             alt="banner"
             
             className="object-cover h-[346px] md:w-[229px] rounded-xl"
@@ -137,14 +137,14 @@ const CategoryTwo = () => {
       
       {/* Image */}
       <img
-        src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
+        src="./products/aside1.png"
         alt="Custom Builds"
         
         className="object-cover w-full"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center">
+      <div className="absolute inset-0 pb-3 bg-black/50 flex flex-col items-center justify-center text-center">
         
         <h2 className="text-white text-xl md:text-2xl font-bold">
           Custome Builds
@@ -168,7 +168,7 @@ const CategoryTwo = () => {
             return (
               <div
                 key={id}
-                className=" p-3 hover:shadow-md transition h-[346px] w-[200px]"
+                className="p-3  hover:shadow-md transition h-[346px] w-[200px]"
               >
                 <p className="text-green-600 text-xs mb-1">
                   ● {stock ? "In stock" : "Out of stock"}

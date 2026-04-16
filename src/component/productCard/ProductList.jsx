@@ -15,7 +15,7 @@ const ProductList = ({ product }) => {
          
               <div
                 key={id}
-                className=" p-3 hover:shadow-md transition h-[346px] w-[200px]"
+                className=" hover:shadow-md transition h-[346px] w-[200px]"
               >
                 <p className="text-green-600 text-xs mb-1">
                   ● {stock ? "In stock" : "Out of stock"}

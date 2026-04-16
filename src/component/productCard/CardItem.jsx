@@ -7,20 +7,6 @@ import ProductList from './ProductList';
 
 const CardItem = () => {
    
-      
-
-
-// const getProducts = async () => {
-//   const res = await fetch("https://your-api.com/products", {
-//     cache: "no-store",
-//   });
-//   return res.json();
-// };
-
-
-//   const products = await getProducts();
-
-
    const products = [
     {
       id: 1,
@@ -129,16 +115,12 @@ const CardItem = () => {
 
        </div>
     </div>
-          {/* mobile */}
+             {/* mobile */}
          <div className="relative w-full h-[250px] md:hidden rounded-xl overflow-hidden">
       
       {/* Image */}
-      <img
-        src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
-        alt="Custom Builds"
-        fill
-        className="object-cover"
-      />
+        <img
+          src="./products/aside1.png" alt="Custom Builds"className="object-cover w-full"/>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center">
@@ -156,6 +138,7 @@ const CardItem = () => {
 
       </div>
     </div>
+
 
         {/* Products */}
         <div className=" col-span-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">

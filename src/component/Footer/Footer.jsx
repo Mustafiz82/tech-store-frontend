@@ -8,8 +8,10 @@ import React from 'react';
     alert("Clicked!");
   };
     return (
+
+      
         <div className='bg-black  w-full h-full'>
-         <div className="  my-10  xl:px-40 lg:px-28 sm:px-20 px-5" >
+         <div className="  my-10 max-w-7xl mx-auto px-4" >
              <div className='lg:flex block mt-10 lg:justify-between lg:items-center'>
                   <div className='text-white sm:text-center'>
                      <h1 className='lg:text-3xl  text-2xl'>Sign Up To Our Newsletter.</h1>
