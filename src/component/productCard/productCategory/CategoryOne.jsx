@@ -89,9 +89,9 @@ const CategoryOne = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className=" xl:px-40 lg:px-28 sm:px-20 my-12 px-5">
+    <div className="max-w-7xl mx-auto px-4 py-10 my-12 ">
 
-      {/* Tabs */}
+       
       <div className="flex gap-6 mb-6 text-sm font-semibold">
         {categories.map((cat, index) => (
           <button
@@ -108,57 +108,67 @@ const CategoryOne = () => {
         ))}
       </div>
 
-      {/* Layout */}
-      <div className="grid md:grid-cols-5 gap-5">
+        <div>
+    <div >
+  {/* mobile */}
+  <div class="relative 
+              w-full h-[200px] block
+              md:w-hidden md:h-hidden 
+              overflow-hidden rounded-lg">
 
-        {/* Left Banner */}
-        <div className="relative hidden md:block col-span-1 h-[346px] md:w-[229px] ">
-          <img
-            src="./products/aside1.png"
-            alt="banner"
-            
-            className="object-cover h-[346px] md:w-[229px] rounded-xl"
-          />
+   
+    <img 
+       src="./products/aside1.png" 
+      alt="MSI Laptops"
+      class="w-full h-full object-cover"
+    />
 
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-xl">
-            <div className="text-center">
-              <h2 className="text-white text-lg font-bold">
-                MSI Laptops
-              </h2>
-              <p className="text-white text-xs underline mt-2">
-                See All Products
-              </p>
-            </div>
-          </div>
-        </div>
-             {/* mobile */}
-         <div className="relative w-full h-[250px] md:hidden rounded-xl overflow-hidden">
+  
+    <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center">
       
-      {/* Image */}
-      <img
-        src="./products/aside1.png"
-        alt="Custom Builds"
-        
-        className="object-cover w-full"
-      />
+      <h2 class="text-white font-semibold text-lg md:text-xl">
+        MSI Laptops
+      </h2>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center">
-        
-        <h2 className="text-white text-xl md:text-2xl font-bold">
-          Custome Builds
-        </h2>
+      <a href="#" class="text-white underline text-sm mt-2">
+        See All Products
+      </a>
 
-        <a
-          href="/products"
-          className="text-white text-sm mt-2 underline hover:text-gray-300 transition"
-        >
-          See All Products
-        </a>
-
-      </div>
     </div>
+
+  </div>
+
+   </div>
+  </div>
+
+      {/* desktop Layout */}
+      <div className="grid md:grid-cols-5 gap-5">
+     <div class="relative 
+             hidden md:block
+              md:w-[229px] md:h-[346px] 
+              overflow-hidden rounded-lg">
+
+   
+    <img 
+      src="./products/aside1.png" 
+      alt="MSI Laptops"
+      class="w-full h-full object-cover"
+    />
+
+  
+    <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center">
+      
+      <h2 class="text-white font-semibold text-lg md:text-xl">
+        MSI Laptops
+      </h2>
+
+      <a href="#" class="text-white underline text-sm mt-2">
+        See All Products
+      </a>
+
+    </div>
+
+  </div>
 
         {/* Products */}
         <div className="col-span-4 grid grid-cols-2 lg:grid-cols-5 gap-5">

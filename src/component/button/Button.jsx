@@ -11,6 +11,8 @@ const Button = ({ text, onClick }) => {
     </button>
     {/* <button  onClick={onClick}  className="border-2 border-blue-600 text-blue-600">{text}</button> */}
    </div>
+
+ 
   );
 };
 

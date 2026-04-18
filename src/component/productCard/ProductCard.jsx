@@ -119,7 +119,7 @@ const ProductCard = () => {
   
 
       
-        <div className=" xl:px-40 lg:px-28 sm:px-20 my-12 px-5">
+        <div className=" max-w-7xl mx-auto px-4 py-10 ">
       <Swiper
      
         modules={[Navigation, Autoplay,Pagination]}

@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <main>
           {children}
         </main>
-           <Support></Support>
+          <Support></Support>
         <Footer></Footer>
         </body>
     </html>

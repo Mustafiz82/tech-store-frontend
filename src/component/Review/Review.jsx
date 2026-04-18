@@ -6,7 +6,7 @@
 const Review = () => {
    
     return (
-        <div className=' xl:px-40 lg:px-28 sm:px-20 px-5'>
+        <div className='max-w-7xl mx-auto px-4'>
             <div className='sm:py-15 py-7 sm:px-20 px-10  bg-[#F5F7FF]'>
                 <div className=''>
                     <div className='flex gap-3'>

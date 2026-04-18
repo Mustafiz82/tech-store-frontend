@@ -1,9 +1,9 @@
 
-import Support from "@/component/Footer/Support";
+
 import Hero from "@/component/Header/Hero/Hero";
 import Images from "@/component/instagram/Images";
 import Instagram from "@/component/instagram/Instagram";
-import LoginPage from "@/component/Login/LoginPage";
+
 import CardItem from "@/component/productCard/CardItem";
 import ProductCard from "@/component/productCard/ProductCard";
 import CategoryOne from "@/component/productCard/productCategory/CategoryOne";
@@ -27,6 +27,7 @@ export default function Home() {
      <CategoryOne></CategoryOne>
      <CategoryTwo></CategoryTwo>
      <CategoryThree></CategoryThree>
+    
 
     {/* images section */}
     <Images></Images>
@@ -38,7 +39,9 @@ export default function Home() {
 {/* static section */}
     <div>
       <Review></Review>
-     <LoginPage></LoginPage>
+     {/* <LoginPage></LoginPage> */}
     </div>
+
+   
   </div>;
 }

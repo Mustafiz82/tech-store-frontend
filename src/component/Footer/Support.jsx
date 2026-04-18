@@ -4,7 +4,7 @@ import React from 'react';
 
 const Support = () => {
     return (
-  <div className='  xl:px-40 lg:px-28 sm:px-20 px-5'>
+  <div className='  max-w-7xl mx-auto px-4'>
           <div className='sm:flex sm:justify-evenly sm:items-center my-12'>
             <div className=' sm:w-1/4  h-auto text-center py-3 px-2'>
                   <div className='flex items-center justify-center'>

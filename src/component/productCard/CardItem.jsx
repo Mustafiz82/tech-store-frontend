@@ -84,64 +84,85 @@ const CardItem = () => {
 
 
   return (
-    <div className=" xl:px-40 lg:px-28 sm:px-20 my-12 px-5">
+    <div className=" max-w-7xl mx-auto px-4 py-10 my-12 ">
 
       {/* Promo Bar */}
       <div className="bg-[#F5F7FF] text-center flex justify-center items-center py-5 gap-2">
         <img src="./logo-img/zip.png" alt="" />
         <p className='text-xl '><span className="text-[#00AEB8] text-xl">|</span>  own it now, up to 6 months interest free</p>
       </div>
+      {/* mobile */}
+
+       <div>
+    <div >
+  
+  <div class="relative 
+              w-full h-[200px] block
+              md:w-hidden md:h-hidden 
+              overflow-hidden rounded-lg">
+
+   
+    <img 
+      src="./products/aside1.png" 
+      alt="MSI Laptops"
+      class="w-full h-full object-cover"
+    />
+
+  
+    <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center">
+      
+      <h2 class="text-white font-semibold text-lg md:text-xl">
+        MSI Laptops
+      </h2>
+
+      <a href="#" class="text-white underline text-sm mt-2">
+        See All Products
+      </a>
+
+    </div>
+
+  </div>
+
+   </div>
+  </div>
 
       <div className=" grid md:grid-cols-5 gap-16 mt-5 ">
-
-
-       <div className="relative  hidden md:block h-[346px] w-[229px] ">
-     <img
-      src="./products/aside1.png"
-      className="h-[346px] md:w-[229px]  object-cover rounded-xl"
-      />
-
-      {/* Overlay */}
-     <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-xl">
+         <div>
     
-          <div className="text-center">
-              <h2 className="text-white text-xl font-bold">
-                 Custom Builds
-              </h2>
-              <p className="text-white text-sm underline mt-2">
-                 See all products
-              </p>
-         </div>
+  {/* desktop layout */}
+  <div class="relative 
+             hidden md:block
+              md:w-[229px] md:h-[346px] 
+              overflow-hidden rounded-lg">
 
-       </div>
-    </div>
-             {/* mobile */}
-         <div className="relative w-full h-[250px] md:hidden rounded-xl overflow-hidden">
+   
+    <img 
+      src="./products/aside1.png" 
+      alt="MSI Laptops"
+      class="w-full h-full object-cover"
+    />
+
+  
+    <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center">
       
-      {/* Image */}
-        <img
-          src="./products/aside1.png" alt="Custom Builds"className="object-cover w-full"/>
+      <h2 class="text-white font-semibold text-lg md:text-xl">
+        MSI Laptops
+      </h2>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center">
-        
-        <h2 className="text-white text-xl md:text-2xl font-bold">
-          Custome Builds
-        </h2>
+      <a href="#" class="text-white underline text-sm mt-2">
+        See All Products
+      </a>
 
-        <a
-          href="/products"
-          className="text-white text-sm mt-2 underline hover:text-gray-300 transition"
-        >
-          See All Products
-        </a>
-
-      </div>
     </div>
 
+  </div>
 
+
+  </div>
+
+              
         {/* Products */}
-        <div className=" col-span-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div className=" col-span-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-10 gap-5">
           {products?.slice(0, 5)?.map((product) => (
             <ProductList key={product.id} product={product} />
           ))}

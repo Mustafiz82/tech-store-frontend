@@ -10,7 +10,7 @@ const MobileNavbar = () => {
   return (
     <div className=" ">
       {/* Navbar */}
-      <div className="bg-blue-600 xl:px-40 lg:px-28 sm:px-20 px-5 py-5 flex items-center gap-3">
+      <div className="bg-blue-600 max-w-7xl mx-auto px-4 py-10 flex items-center gap-3">
 
         {/* Menu Icon */}
         <Menu

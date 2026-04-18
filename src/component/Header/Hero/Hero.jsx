@@ -1,79 +1,72 @@
-'use client'
+// 'use client'
 
-import React, { useState, useEffect } from "react";
-
-
+// import React, { useState, useEffect } from "react";
 
 
+"use client";
 
-const Hero= () => {
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { Navigation, Pagination } from "swiper/modules";
+
+const Hero = () => {
   const slides = [
-     {
+    {
+      id: 1,
       img: "./slider/slider-img.png",
     },
-     {
-      img: "./slider/slider-img.png",
+    {
+      id: 2,
+        img: "./slider/slider-img.png",
     },
-     {
-      img: "./slider/slider-img.png",
-    },
-    
   ];
 
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? slides.length - 1 : current - 1);
-  };
-
-  const nextSlide = () => {
-    setCurrent(current === slides.length - 1 ? 0 : current + 1);
-  };
-
   return (
-    <div className=" xl:px-40 lg:px-28 sm:px-20 px-5 ">
-        <div className="relative w-full h-[173px]   sm:h-[173px] md:h-[328px]  overflow-hidden">
-      
-      {/* Image */}
-      <img
-        src={slides[current].img}
-        alt="hero"
-        className="w-full h-full  object-cover object-center"
-      />
+    <section className="max-w-6xl mx-auto px-4 py-10">
+      <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden">
+        
+        <Swiper
+          modules={[Navigation, Pagination]}
+          navigation={true}        // ← arrow buttons
+          pagination={{ clickable: true }} // ← dots clickable
+          loop={true}
+          className="w-full h-full"
+        >
+          {slides.map((item) => (
+            <SwiperSlide key={item.id}>
+              <div className="relative w-full h-full">
 
-      {/* Overlay */}
-      {/* <div className="absolute w-full h-[173px] sm:h-[173px] md:h-[328px]    xl:px-40 lg:px-28 sm:px-20 px-5  inset-0 bg-black/50"></div> */}
+                {/* Image */}
+                <img
+                  src={item.img}
+                  alt="hero"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-     
-
-      {/* Left Button */}
-      <button
-        onClick={prevSlide}
-        className="absolute top-1/2 left-2 sm:left-4 -translate-y-1/2 text-white text-lg sm:text-2xl"
-      >
-        ❮
-      </button>
-
-      {/* Right Button */}
-      <button
-        onClick={nextSlide}
-        className="absolute top-1/2 right-2 sm:right-4 -translate-y-1/2 text-white text-lg sm:text-2xl"
-      >
-        ❯
-      </button>
-
-     
-     
-    </div>
-    </div>
+      </div>
+    </section>
   );
 };
 
 export default Hero;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

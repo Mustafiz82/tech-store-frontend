@@ -19,7 +19,7 @@ const Images = () => {
            "img":"./logo-img/img-7.png" },
     ]
     return (
-        <div  className='   xl:px-40 lg:px-28 sm:px-20 px-5'>
+        <div  className='   max-w-7xl mx-auto px-4'>
             <div  className=' grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2  gap-5 my-12 '>
 
                 {
