@@ -2,22 +2,16 @@ export default function LoginPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
 
-      <p className="text-sm text-gray-500 mb-2">
-        Home • Login
-      </p>
+      <p className="text-sm text-gray-500 mb-2"> Home • Login </p>
 
-      <h1 className="text-3xl font-semibold mb-8">
-        Customer Login
-      </h1>
+      <h1 className="text-3xl font-semibold mb-8">Customer Login</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
         {/* LEFT */}
         <div className="bg-gray-100 p-8 rounded-md">
 
-          <h2 className="text-lg font-semibold mb-2">
-            Registered Customers
-          </h2>
+          <h2 className="text-lg font-semibold mb-2">Registered Customers </h2>
 
           <p className="text-sm text-gray-500 mb-6">
             If you have an account, sign in with your email address.

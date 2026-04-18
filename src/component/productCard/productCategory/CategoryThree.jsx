@@ -107,7 +107,7 @@ const CategoryThree = () => {
       
       {/* Image */}
       <img
-        src="public/products/aside1.png"
+        src="./products/aside1.png"
         alt="Custom Builds"
         fill
         className="object-cover"

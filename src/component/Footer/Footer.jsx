@@ -102,7 +102,7 @@ import React from 'react';
                      <img className='w-5 h-auto' src="./footer-img/ant-design_instagram-filled.png" alt="" />
                  </div>
                  <div className='md:flex hidden gap-3 '>
-                      <img src="./footer-img/paypal/payment-methods/light/paypal.png" alt="" />
+                      <img src="./footer-img/paypal/payment-methods/light/paypal.png" alt="img" />
                       <img src="./footer-img/visa/payment-methods/light/visa.png" alt="" />
                       <img src="./footer-img/visa1/payment-methods/light/maestro.png" alt="" />
                       <img src="./footer-img/discover1/payment-methods/light/discover.png" alt="" />

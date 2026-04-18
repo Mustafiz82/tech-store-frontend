@@ -9,7 +9,7 @@ const ProductList = ({ product }) => {
        const {id,stock,img,image,description,oldPrice,newPrice,rating  } = product;
 
   return (
-    <div className="grid md:grid-cols-5 gap-5">
+    <div className="grid md:grid-cols-5 mt-4 gap-5">
         {/* Products */}
         <div className="col-span-4 grid grid-cols-2 lg:grid-cols-5 gap-5">
          
@@ -28,8 +28,9 @@ const ProductList = ({ product }) => {
                     className="object-contain h-[346px] w-[229px]"
                   />
                 </div>
-
-                <div className="text-yellow-500 text-sm mt-8">
+                 <div className=" mt-14">
+                  
+                <div className="text-yellow-500 text-sm">
                   <img src={image} alt="" />
                   <p>{rating}</p>
                 </div>
@@ -44,6 +45,7 @@ const ProductList = ({ product }) => {
                   </span>
                   <p className="font-bold">${newPrice}</p>
                 </div>
+                 </div>
               </div>
             
          

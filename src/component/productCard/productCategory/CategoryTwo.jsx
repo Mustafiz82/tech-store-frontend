@@ -112,12 +112,7 @@ const CategoryTwo = () => {
 
         {/* Left Banner */}
         <div className="relative  hidden md:block col-span-1 h-[346px] md:w-[229px] ">
-          <img
-            src="./products/aside1.png"
-            alt="banner"
-            
-            className="object-cover h-[346px] md:w-[229px] rounded-xl"
-          />
+          <img src="./products/aside1.png" alt="banner"className="object-cover h-[346px] md:w-[229px] rounded-xl" />
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-xl">
@@ -136,12 +131,7 @@ const CategoryTwo = () => {
          <div className="relative w-full h-[250px] md:hidden rounded-xl overflow-hidden">
       
       {/* Image */}
-      <img
-        src="./products/aside1.png"
-        alt="Custom Builds"
-        
-        className="object-cover w-full"
-      />
+      <img src="./products/aside1.png" alt="Custom Builds"className="object-cover w-full" />
 
       {/* Overlay */}
       <div className="absolute inset-0 pb-3 bg-black/50 flex flex-col items-center justify-center text-center">
@@ -150,12 +140,7 @@ const CategoryTwo = () => {
           Custome Builds
         </h2>
 
-        <a
-          href="/products"
-          className="text-white text-sm mt-2 underline hover:text-gray-300 transition"
-        >
-          See All Products
-        </a>
+        <a href="/products"className="text-white text-sm mt-2 underline hover:text-gray-300 transition"> See All Products</a>
 
       </div>
     </div>
@@ -175,11 +160,7 @@ const CategoryTwo = () => {
                 </p>
 
                 <div className="h-[120px] flex items-center justify-center">
-                  <img
-                    src={img}
-                    alt={img}
-                    className="object-contain h-[346px] w-[229px]"
-                  />
+                  <img src={img}alt={img}className="object-contain h-[346px] w-[229px]" />
                 </div>
 
                 <div className="text-yellow-500 text-sm mt-8">
