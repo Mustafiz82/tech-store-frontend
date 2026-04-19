@@ -98,7 +98,7 @@ export default function Dashboard() {
 
             {/* Address Book */}
             <div className="bg-white p-6 rounded-lg shadow">
-              <div className="flex justify-between items-center border-b pb-2 mb-4">
+              <div className="flex justify-between items-center border-b border-gray-200 pb-2 mb-4">
                 <h2 className="font-bold text-lg">Address Book</h2>
                 <Link href="#" className="text-blue-500 ">
                   Manage Addresses

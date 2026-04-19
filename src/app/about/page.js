@@ -5,10 +5,10 @@ const page = () => {
     return (
        <div>
         <div className="bg-gray-100 py-6">
-  <div class="max-w-7xl mx-auto px-4">
+  <div className="max-w-7xl mx-auto px-4">
     
    
-    <p class="text-sm text-gray-500">
+    <p className="text-sm text-gray-500">
       Home <span className="mx-1">•</span> About Us
     </p>
 

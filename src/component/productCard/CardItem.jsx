@@ -84,7 +84,7 @@ const CardItem = () => {
 
 
   return (
-    <div className=" max-w-7xl mx-auto px-4 py-10 my-12 ">
+    <div className=" max-w-7xl mx-auto px-4 pt-10 my-12 ">
 
       {/* Promo Bar */}
       <div className="bg-[#F5F7FF] text-center flex justify-center items-center py-5 gap-2">
@@ -96,26 +96,20 @@ const CardItem = () => {
        <div>
     <div >
   
-  <div class="relative 
-              w-full h-[200px] block
-              md:w-hidden md:h-hidden 
-              overflow-hidden rounded-lg">
-
-   
-    <img 
-      src="./products/aside1.png" 
-      alt="MSI Laptops"
-      class="w-full h-full object-cover"
-    />
-
+   <div className="relative w-full h-[200px] block mt-5 md:mt-0 md:hidden overflow-hidden rounded-lg">
+      <img 
+          src="/products/aside1.png"
+           alt="MSI Laptops"
+           className="w-full h-full object-cover"
+     />
   
-    <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center">
+    <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center">
       
-      <h2 class="text-white font-semibold text-lg md:text-xl">
+      <h2 className="text-white font-semibold text-lg md:text-xl">
         MSI Laptops
       </h2>
 
-      <a href="#" class="text-white underline text-sm mt-2">
+      <a href="#" className="text-white underline text-sm mt-2">
         See All Products
       </a>
 
@@ -130,7 +124,7 @@ const CardItem = () => {
          <div>
     
   {/* desktop layout */}
-  <div class="relative 
+   <div className="md:relative 
              hidden md:block
               md:w-[229px] md:h-[346px] 
               overflow-hidden rounded-lg">
@@ -139,17 +133,18 @@ const CardItem = () => {
     <img 
       src="./products/aside1.png" 
       alt="MSI Laptops"
-      class="w-full h-full object-cover"
+      className="w-full h-full object-cover"
     />
 
+
   
-    <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center">
+    <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center">
       
-      <h2 class="text-white font-semibold text-lg md:text-xl">
+      <h2 className="text-white font-semibold text-lg md:text-xl">
         MSI Laptops
       </h2>
 
-      <a href="#" class="text-white underline text-sm mt-2">
+      <a href="#" className="text-white underline text-sm mt-2">
         See All Products
       </a>
 

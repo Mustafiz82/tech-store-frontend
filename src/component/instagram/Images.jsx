@@ -20,7 +20,7 @@ const Images = () => {
     ]
     return (
         <div  className='   max-w-7xl mx-auto px-4'>
-            <div  className=' grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2  gap-5 my-12 '>
+            <div  className=' grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2  gap-5 mt-12 '>
 
                 {
                    img?.slice(0,7).map(data => (

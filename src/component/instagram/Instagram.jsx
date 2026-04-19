@@ -53,13 +53,13 @@ const Instagram = () => {
  
 
     return (
-        <div  className='  max-w-7xl mx-auto px-4 my-12'>
+        <div  className='hidden md:block  max-w-7xl mx-auto px-4 mt-12'>
           <p  className='font-bold Poppins'>Follow us on Instagram for News, Offers & More</p>
             <div  className=' grid lg:grid-cols-6 md:grid-cols-4 gap-1  '>
 
                 {
           instagram?.slice(0,9).map(data=> (
-            <div key={data.id} className='hidden md:block mt-5'>
+            <div key={data.id} className=' mt-5'>
               <div>
                   <div className=''>
                  <img  src={data.img} alt="" />

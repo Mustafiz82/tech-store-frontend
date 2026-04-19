@@ -6,9 +6,9 @@ export default function OrderSummary({ items }) {
   );
 
   return (
-    <div className="bg-white p-5 rounded-lg shadow sticky top-6">
+    <div className="bg-white p-5 rounded-lg shadow top-6">
 
-      <h2 className="text-lg font-semibold mb-4 border-b pb-2">
+      <h2 className="text-lg font-semibold mb-4 border-b border-gray-200 pb-2">
         Order Summary
       </h2>
 
@@ -37,10 +37,10 @@ export default function OrderSummary({ items }) {
         ))}
       </div>
 
-      <div className="border-t mt-4 pt-3 flex justify-between font-semibold">
+      {/* <div className="border-t border-gray-200 mt-4 pt-3 flex justify-between font-semibold">
         <span>Total</span>
         <span>${total}</span>
-      </div>
+      </div> */}
 
     </div>
   );

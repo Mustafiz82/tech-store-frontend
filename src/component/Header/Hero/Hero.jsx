@@ -25,7 +25,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-10">
+    <section className="max-w-7xl mx-auto px-4 py-10">
       <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden">
         
         <Swiper
