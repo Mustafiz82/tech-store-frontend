@@ -14,7 +14,7 @@ export default function ProductPage({ params, searchParams }) {
     : "about";
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-6">
+    <div className="max-w-7xl mx-auto px-4 py-6">
 
       {/* Tabs */}
       <div className="flex gap-6 border-b pb-4 mb-6">

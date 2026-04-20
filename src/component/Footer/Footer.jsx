@@ -98,15 +98,15 @@ import React from 'react';
                  <div className='flex mt-10 justify-between items-center'>
                          <div className='flex gap-1'>
                     
-                     <img className='w-5 h-auto' src="./footer-img/ant-design_facebook-filled.png " alt="facebook" />
-                     <img className='w-5 h-auto' src="./footer-img/ant-design_instagram-filled.png" alt="" />
+                     <img className='w-5 h-auto' src="./footer-img/ant-design_facebook-filled.png" alt="facebook" />
+                     <img className='w-5 h-auto' src="./footer-img/ant-design_instagram-filled.png" alt="discover" />
                  </div>
                  <div className='md:flex hidden gap-3 '>
                       <img src="./footer-img/paypal/payment-methods/light/paypal.png" alt="img" />
-                      <img src="./footer-img/visa/payment-methods/light/visa.png" alt="" />
-                      <img src="./footer-img/visa1/payment-methods/light/maestro.png" alt="" />
-                      <img src="./footer-img/discover1/payment-methods/light/discover.png" alt="" />
-                      <img src="./footer-img/american/payment-methods/light/american-express.png" alt="" />
+                      <img src="./footer-img/visa/payment-methods/light/visa.png" alt="discover" />
+                      <img src="./footer-img/visa1/payment-methods/light/maestro.png" alt="discover" />
+                      <img src="./footer-img/discover1/payment-methods/light/discover.png" alt="discover" />
+                      <img src="./footer-img/american/payment-methods/light/american-express.png" alt="discover" />
                  </div>
                   <div>
                     <p className='text-white text-sm lg:text-gray-400'>Copyright &copy; 2020 Shop Pty. Ltd.</p>
@@ -117,11 +117,11 @@ import React from 'react';
 
              </div>
                  <div className='md:hidden mt-3 items-center justify-center flex gap-1'>
-                      <img src="./footer-img/paypal/payment-methods/light/paypal.png " alt="" />
-                      <img src="./footer-img/visa/payment-methods/light/visa.png" alt="" />
-                      <img src="./footer-img/visa1/payment-methods/light/maestro.png " alt="" />
-                      <img src="./footer-img/discover1/payment-methods/light/discover.png " alt="" />
-                      <img src="./footer-img/american/payment-methods/light/american-express.png " alt="" />
+                      <img src="./footer-img/paypal/payment-methods/light/paypal.png" alt="discover" />
+                      <img src="./footer-img/visa1/payment-methods/light/maestro.png" alt="discover" />
+                      <img src="./footer-img/visa1/payment-methods/light/maestro.png" alt="discover" />
+                      <img src="./footer-img/discover1/payment-methods/light/discover.png" alt="discover" />
+                      <img src="./footer-img/american/payment-methods/light/american-express.png" alt="discover" />
                  </div>
             
          </div>

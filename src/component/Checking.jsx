@@ -1,206 +1,232 @@
 "use client"
-import React, { useState } from "react";
 
-const tabs = [
-  { id: "about", label: "About Product" },
-  { id: "details", label: "Details" },
-  { id: "specs", label: "Specs" },
-];
 
-const Checking = () => {
-  const [activeTab, setActiveTab] = useState("specs");
+const productData = {
+  id: 1,
+  name: "MSI MPG Trident 3",
+  price: 3299,
 
-  const specs = [
-    { label: "CPU", value: "N/A" },
-    { label: "Featured", value: "N/A" },
-    { label: "I/O Ports", value: "N/A" },
-  ];
+  about: {
+    h4:"Be the first to review this product",
+    description:
+      "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop",
+    colors: ["black", "gray", "lightgray"],
+  },
 
-  const renderContent = () => {
-    if (activeTab === "about") {
-      return (
-      <div className="mt-6 max-w-2xl">
-      
-      {/* Title */}
-      <h1 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-2">
-        MSI MPG Trident 3
-      </h1>
+  details: [
+    "Intel Core i7-10700F",
+    "Intel H410",
+    "NVIDIA RTX 2060 SUPER 8GB",
+    "16GB RAM DDR4",
+    "512GB SSD + 2TB HDD",
+  ],
 
-      {/* Review */}
-      <p className="text-blue-500 text-sm mb-4 cursor-pointer">
-        Be the first to review this product
-      </p>
+  specs: [
+    { key: "CPU", value: "N/A" },
+    { key: "Featured", value: "N/A" },
+    { key: "I/O Ports", value: "N/A" },
+  ],
 
-      {/* Description */}
-      <p className="text-sm text-gray-700 leading-relaxed mb-6">
-        MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM,
-        512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse
-        3 Years Warranty Gaming Desktop
-      </p>
+  image: "/pc.png",
+};
 
-      {/* Color Options */}
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-6 h-6 rounded-full border-2 border-blue-500 flex items-center justify-center">
-          <div className="w-4 h-4 bg-gray-800 rounded-full"></div>
-        </div>
 
-        <div className="w-6 h-6 rounded-full bg-yellow-100"></div>
+import { useState } from "react";
 
-        <div className="w-6 h-6 rounded-full bg-gray-200"></div>
-      </div>
-
-      {/* Bottom */}
-      <div className="flex justify-between items-center mt-6 text-sm">
-        <p>
-          Have a Question?{" "}
-          <span className="text-blue-500 cursor-pointer">
-            Contact Us
-          </span>
-        </p>
-
-        <p className="text-gray-400">SKU D55I5AI</p>
-      </div>
-
-      {/* More Info */}
-      <div className="mt-8">
-        <button className="text-sm font-semibold text-gray-700">
-          + MORE INFORMATION
-        </button>
-      </div>
-    </div>
-      );
-    }
-
-    if (activeTab === "details") {
-      return (
-        <div className="mt-6 max-w-2xl">
-      
-      {/* Title */}
-      <h1 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-2">
-        MSI MPG Trident 3
-      </h1>
-
-      {/* Review */}
-      <p className="text-blue-500 text-sm mb-4 cursor-pointer">
-        Be the first to review this product
-      </p>
-
-      {/* Manual List */}
-      <ul className="list-disc pl-5 space-y-2 text-sm text-gray-700">
-        <li>Intel Core i7-10700F</li>
-        <li>Intel H410</li>
-        <li>WHITE</li>
-        <li>NVIDIA MSI GeForce RTX 2060 SUPER 8GB AERO ITX GDDR6</li>
-        <li>SO-DIMM 16GB (16GB x 1) DDR4 2666MHz</li>
-        <li>2 total slots (64GB Max)</li>
-        <li>512GB (1 x 512GB) M.2 NVMe PCIe GEN3x4 SSD 2TB (2.5) 5400RPM</li>
-        <li>Gaming Keyboard GK30 + Gaming Mouse GM11</li>
-        <li>3.5 HDD (0/0), 2.5 HDD/SSD (1/0), M.2 (1/0)</li>
-        <li>Intel WGI219V ethernet (10/100/1000M)</li>
-        <li>AX200 (WiFi 6) + BT5.1</li>
-        <li>PSU 330W</li>
-        <li>Fan Cooler</li>
-      </ul>
-
-      {/* Bottom */}
-      <div className="flex justify-between items-center mt-6 text-sm">
-        <p>
-          Have a Question?{" "}
-          <span className="text-blue-500 cursor-pointer">
-            Contact Us
-          </span>
-        </p>
-
-        <p className="text-gray-400">SKU D55I5AI</p>
-      </div>
-
-      {/* More Info */}
-      <div className="mt-8">
-        <button className="text-sm font-semibold text-gray-700">
-          + MORE INFORMATION
-        </button>
-      </div>
-    </div>
-      );
-    }
-
-    if (activeTab === "specs") {
-      return (
-        <div className="mt-4">
-          <p className="text-blue-500 text-sm mb-6 cursor-pointer">
-            Be the first to review this product
-          </p>
-
-          <div className="border rounded-md overflow-hidden w-full max-w-md">
-            {specs.map((item, index) => (
-              <div
-                key={index}
-                className={`flex justify-between px-4 py-3 text-sm ${
-                  index % 2 === 0 ? "bg-gray-100" : "bg-gray-200"
-                }`}
-              >
-                <span>{item.label}</span>
-                <span className="text-gray-500">{item.value}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      );
-    }
-  };
+const Checking= () => {
+ const [activeTab, setActiveTab] = useState("about");
+  const [qty, setQty] = useState(1);
+  const product = productData;
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10">
-      
-      {/* 🔥 Tabs (LINK STYLE) */}
-      <div className="flex gap-8 border-b text-sm font-medium">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className={`pb-3 transition ${
-              activeTab === tab.id
-                ? "text-blue-600 border-b-2 border-blue-600"
-                : "text-gray-500 hover:text-black"
-            }`}
-          >
-            {tab.label}
+    <div className="max-w-7xl mx-auto px-4 mt-10 mb-20">
+
+      {/* TOP BAR */}
+      <div className="flex justify-between  items-center mb-6 flex-wrap gap-4">
+        
+        {/* Tabs */}
+        <div className="flex gap-6">
+          {["about", "details", "specs"].map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`pb-2 border-b-2 capitalize ${
+                activeTab === tab
+                  ? "border-blue-500 text-gray-400"
+                  : "border-transparent text-black"
+              }`}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
+
+        {/* RIGHT SIDE */}
+        <div className="md:flex md:items-center hidden md:gap-3">
+          <span className="text-sm">
+            On Sale from <b>${product.price}</b>
+          </span>
+
+          {/* Quantity */}
+          <div className="flex border rounded overflow-hidden">
+            <button
+              onClick={() => setQty(qty > 1 ? qty - 1 : 1)}
+              className="px-3"
+            >
+              -
+            </button>
+            <span className="px-4">{qty}</span>
+            <button
+              onClick={() => setQty(qty + 1)}
+              className="px-3"
+            >
+              +
+            </button>
+          </div>
+
+          {/* ADD TO CART */}
+          <button className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition">
+            Add to Cart
           </button>
-        ))}
+
+          {/* PAYPAL */}
+          <button className="bg-yellow-400 px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transition">
+            PayPal
+          </button>
+        </div>
       </div>
 
-      {/* Content */}
-      <div className="mt-6">
-        {/* Breadcrumb */}
-        <p className="text-xs text-gray-500 mb-4">
-          Home • Laptops • MSI WS Series
-        </p>
+      {/* MAIN */}
+      <div className="flex justify-between flex-col-reverse md:flex-row gap-20 items-center">
+        
+        {/* LEFT */}
+        <div className="">
+          <p className="text-sm text-gray-400 mb-2">
+            Home • Laptops • MSI WS Series
+          </p>
 
-        {/* Title */}
-        <h1 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-2">
-          MSI MPG Trident 3
-        </h1>
+          <h2 className="text-2xl font-semibold mb-3">
+            {product.name}
+          </h2>
 
-        {/* Dynamic Content */}
-        {renderContent()}
+          {/* ABOUT */}
+          {activeTab === "about" && (
+            <div>
+              <h4>{product.about.h4}</h4>
+              <p className="text-gray-600 mb-4">
+                {product.about.description}
+              </p>
 
-        {/* Bottom */}
-        <div className="flex justify-between mt-6 text-sm">
-          <p>
+              <div className="flex gap-3 mb-4">
+                {product.about.colors.map((color, i) => (
+                  <span
+                    key={i}
+                    className="w-6 h-6 rounded-full border"
+                    style={{ backgroundColor: color }}
+                  ></span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* DETAILS */}
+          {activeTab === "details" && (
+            <ul className="list-disc ml-5 text-gray-600 space-y-2">
+              {product.details.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          )}
+
+          {/* SPECS */}
+          {activeTab === "specs" && (
+            <div className="border rounded-lg overflow-hidden">
+              {product.specs.map((spec, i) => (
+                <div
+                  key={i}
+                  className="grid grid-cols-2 border-b last:border-none"
+                >
+                  <span className="p-3 bg-gray-100">
+                    {spec.key}
+                  </span>
+                  <span className="p-3">{spec.value}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <p className="mt-5 text-sm">
             Have a Question?{" "}
             <span className="text-blue-500 cursor-pointer">
               Contact Us
             </span>
           </p>
+          <div className="md:hidden mt-5 block">
 
-          <p className="text-gray-400">SKU D55I5AI</p>
+             <div className="flex items-center gap-4">
+        
+        {/* Quantity */}
+      
+         
+              <div className="flex justify-center items-center  h-10 mt-5 border rounded overflow-hidden">
+            <button
+              onClick={() => setQty(qty > 1 ? qty - 1 : 1)}
+              className="px-3"
+            >
+              -
+            </button>
+            <span className="px-4">{qty}</span>
+            <button
+              onClick={() => setQty(qty + 1)}
+              className="px-3"
+            >
+              +
+            </button>
+          </div>
+
+        {/* Add to Cart */}
+        <button className="flex-1 h-12 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition">
+          Add to Cart
+        </button>
+
+        {/* PayPal */}
+        <button className="flex items-center justify-center gap-2 h-12 px-4 bg-yellow-400 rounded-full font-semibold hover:bg-yellow-500 transition">
+          PayPal
+        </button>
+         
+
+             </div>
+
+                 {/* Bottom Info */}
+                 <div className="bg-gray-100 mt-5 text-center py-3 rounded-lg text-gray-700">
+                 On Sale from <span className="font-semibold">$3,299.00</span>
+           </div>
+          </div>
         </div>
+        
 
-        {/* More Info */}
-        <div className="mt-8">
-          <button className="text-sm font-semibold text-gray-700">
-            + MORE INFORMATION
-          </button>
+        {/* RIGHT */}
+        <div className="">
+          
+           <div className=" flex  items-center justify-between gap-10 relative">
+                <div>
+                  
+                  <img src='./products/p-img-4.png'  alt="product"  className="w-[260px] md:w-[320px] md:ml-20 ml-10 object-contain"  />
+                 <div className="ml-20 text-center flex justify-center items-center py-5 gap-2">
+                    <img src="./img/primary 1.png" alt="" />
+                   <p><span className="text-[#00AEB8] text-xl">|</span>  own it now, up to 6 months<br></br> interest free</p>
+               </div>
+            </div>
+
+
+          <div className="absolute   top-1/3 flex flex-col gap-3">
+            <span className="w-8 h-8 border rounded-full flex items-center justify-center">❤</span>
+            <span className="w-8 h-8 border rounded-full flex items-center justify-center">≡</span>
+            <span className="w-8 h-8 border rounded-full flex items-center justify-center">✉</span>
+          </div>
+
+           </div>
+         
         </div>
       </div>
     </div>
@@ -208,6 +234,11 @@ const Checking = () => {
 };
 
 export default Checking;
+
+
+
+
+
 
 
 

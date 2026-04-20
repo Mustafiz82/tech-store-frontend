@@ -2,7 +2,7 @@
 
 
 
-import Checking from "@/component/Checking";
+
 import Hero from "@/component/Header/Hero/Hero";
 import Images from "@/component/instagram/Images";
 import Instagram from "@/component/instagram/Instagram";
@@ -25,7 +25,7 @@ export default function Home() {
     <Hero></Hero>
      <ProductCard></ProductCard>
      <CardItem></CardItem>
-     <Checking></Checking>
+   
      {/* product-category */}
      <CategoryOne></CategoryOne>
      <CategoryTwo></CategoryTwo>
