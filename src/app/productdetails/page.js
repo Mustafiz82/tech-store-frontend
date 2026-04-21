@@ -127,7 +127,7 @@ export default function Page() {
                 Feature Title
               </p>
 
-              <p className="text-gray-400 text-xs mt-2">
+              <p className="text-gray-400 text-xs  mt-2">
                 The MPG series brings out the best in gamers by allowing full expression in color with advanced RGB lighting control and synchronization.
               </p>
             </div>
@@ -141,74 +141,7 @@ export default function Page() {
 }
 
 
-// export default function ProductSection() {
-//   const product = {
-//     name: "MSI MPG Trident 3",
-//     desc: "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, RTX 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD",
-//     image: "/img/product.png",
-//     sku: "D55IIA",
-//     colors: ["#1f2937", "#d6d3d1", "#e5e7eb"],
-//   };
 
-//   return (
-//     <div className="w-full bg-gray-100 py-10">
-//       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
-
-        
-
-//         {/* RIGHT */}
-//         <div className="flex-1 flex flex-col items-center relative">
-
-//           {/* Side Icons */}
-//           <div className="absolute left-0 top-1/2 -translate-y-1/2 flex flex-col gap-3">
-//             {["❤", "≡", "✉"].map((icon, i) => (
-//               <div
-//                 key={i}
-//                 className="w-8 h-8 border rounded-full flex items-center justify-center text-gray-400 text-sm"
-//               >
-//                 {icon}
-//               </div>
-//             ))}
-//           </div>
-
-//           {/* Image */}
-//           <img
-//             src={product.image}
-//             alt={product.name}
-//             className="w-[200px] sm:w-[240px] md:w-[280px] object-contain"
-//           />
-
-//           {/* Zip */}
-//           <div className="mt-6 text-xs text-gray-500 flex items-center gap-2">
-//             <span className="font-semibold text-black">zip</span>
-//             <span>own it now, up to 6 months interest free</span>
-//           </div>
-
-//           {/* Dots */}
-//           <div className="flex gap-2 mt-4">
-//             {[0, 1, 2].map((_, i) => (
-//               <span
-//                 key={i}
-//                 className={`w-2 h-2 rounded-full ${
-//                   i === 0 ? "bg-blue-500" : "bg-gray-300"
-//                 }`}
-//               />
-//             ))}
-//           </div>
-
-//         </div>
-
-//       </div>
-
-//       {/* MORE INFO */}
-//       <div className="max-w-7xl mx-auto px-4 mt-6">
-//         <p className="text-sm font-semibold text-gray-700 cursor-pointer">
-//           + MORE INFORMATION
-//         </p>
-//       </div>
-//     </div>
-//   );
-// }
 
 
 

@@ -42,7 +42,7 @@ const Checking= () => {
     <div className="max-w-7xl mx-auto px-4 mt-10 mb-20">
 
       {/* TOP BAR */}
-      <div className="flex justify-between  items-center mb-6 flex-wrap gap-4">
+      <div className="flex justify-between   items-center mb-6 flex-wrap gap-4">
         
         {/* Tabs */}
         <div className="flex gap-6">
@@ -97,10 +97,10 @@ const Checking= () => {
       </div>
 
       {/* MAIN */}
-      <div className="flex justify-between flex-col-reverse md:flex-row gap-20 items-center">
+      <div className="flex justify-between  flex-col-reverse md:flex-row gap-20 items-center">
         
         {/* LEFT */}
-        <div className="">
+        <div className="md:w-1/2 w-full">
           <p className="text-sm text-gray-400 mb-2">
             Home • Laptops • MSI WS Series
           </p>
@@ -140,13 +140,10 @@ const Checking= () => {
 
           {/* SPECS */}
           {activeTab === "specs" && (
-            <div className="border rounded-lg overflow-hidden">
+            <div className=" rounded-lg overflow-hidden">
               {product.specs.map((spec, i) => (
-                <div
-                  key={i}
-                  className="grid grid-cols-2 border-b last:border-none"
-                >
-                  <span className="p-3 bg-gray-100">
+                <div key={i} className="grid grid-cols-2  bg-gray-100 " >
+                  <span className="p-3 ">
                     {spec.key}
                   </span>
                   <span className="p-3">{spec.value}</span>
@@ -208,22 +205,25 @@ const Checking= () => {
         {/* RIGHT */}
         <div className="">
           
-           <div className=" flex  items-center justify-between gap-10 relative">
+           <div className=" flex gap-10  items-center justify-between ">
+            
+
+         
+             <div className="   top-1/3 flex flex-col gap-3">
+               <span className="w-8 h-8 border rounded-full flex items-center justify-center">❤</span>
+               <span className="w-8 h-8 border rounded-full flex items-center justify-center">≡</span>
+               <span className="w-8 h-8 border rounded-full flex items-center justify-center">✉</span>
+             </div>
+      
                 <div>
                   
-                  <img src='./products/p-img-4.png'  alt="product"  className="w-[260px] md:w-[320px] md:ml-20 ml-10 object-contain"  />
-                 <div className="ml-20 text-center flex justify-center items-center py-5 gap-2">
-                    <img src="./img/primary 1.png" alt="" />
-                   <p><span className="text-[#00AEB8] text-xl">|</span>  own it now, up to 6 months<br></br> interest free</p>
-               </div>
+                  <img src='./products/p-img-4.png'  alt="product"  className="w-[260px] md:w-[320px] object-contain"  />
+                   <div className="md:ml-20 text-center flex justify-center items-center py-5 gap-2">
+                      <img src="./img/primary 1.png" alt="" />
+                     <p><span className="text-[#00AEB8] text-xl">|</span>  own it now, up to 6 months<br></br> interest free</p>
+                 </div>
             </div>
 
-
-          <div className="absolute   top-1/3 flex flex-col gap-3">
-            <span className="w-8 h-8 border rounded-full flex items-center justify-center">❤</span>
-            <span className="w-8 h-8 border rounded-full flex items-center justify-center">≡</span>
-            <span className="w-8 h-8 border rounded-full flex items-center justify-center">✉</span>
-          </div>
 
            </div>
          
