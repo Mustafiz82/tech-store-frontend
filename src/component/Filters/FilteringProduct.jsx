@@ -13,7 +13,7 @@ export default function FilteringProduct() {
       description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-One PC",
       oldPrice: "$499.00",
       newPrice: "$499.00",
-       rating: "review (4)"
+       rating: "review (4)",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ export default function FilteringProduct() {
       description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
       oldPrice: "$80.00",
       newPrice: "$60.00",
-      rating: "review (4)"
+      rating: "review (4)",
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ export default function FilteringProduct() {
       description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
       oldPrice: "$70.00",
       newPrice: "$50.00",
-     rating: "review (4)"
+     rating: "review (4)",
     },
     {
       id: 5,
@@ -54,7 +54,7 @@ export default function FilteringProduct() {
       description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
       oldPrice: "$150.00",
       newPrice: "$120.00",
-     rating: "review (4)"
+     rating: "review (4)",
     },
     {
       id: 6,
@@ -64,7 +64,7 @@ export default function FilteringProduct() {
       description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
       oldPrice: "$400.00",
       newPrice: "$350.00",
-     rating: "review (4)"
+     rating: "review (4)",
     },
     {
       id: 7,
@@ -74,7 +74,7 @@ export default function FilteringProduct() {
       description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
       oldPrice: "$200.00",
       newPrice: "$170.00",
-       rating: "review (4)"
+       rating: "review (4)",
     },
     {
       id: 8,
@@ -84,7 +84,7 @@ export default function FilteringProduct() {
       description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
       oldPrice: "$130.00",
       newPrice: "$100.00",
-       rating: "review (4)"
+       rating: "review (4)",
     },
     {
       id: 9,
@@ -94,19 +94,123 @@ export default function FilteringProduct() {
       description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
       oldPrice: "$600.00",
       newPrice: "$520.00",
-       rating: "review (4)"
+       rating: "review (4)",
+    },
+  
+      {
+      id: 10,
+      isActive: true,
+      img: "./products/p-img-4.png",
+       image:"./logo-img/Group-star 133.png",
+      description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-One PC",
+      oldPrice: "$499.00",
+      newPrice: "$499.00",
+       rating: "review (4)",
     },
     {
-      id: 10,
+      id: 11,
+      isActive: true,
+      img: "./products/p-img-1.png",
+       image:"./logo-img/Group-star 133.png",
+      description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      oldPrice: "$120.00",
+      newPrice: "$90.00",
+      rating: "review (4)",
+ 
+    },
+    {
+      id:12,
+      isActive: false,
+      img: "./products/p-img-2.png",
+       image:"./logo-img/Group-star 133.png",
+      description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      oldPrice: "$80.00",
+      newPrice: "$60.00",
+      rating: "review (4)",
+    },
+    {
+      id: 13,
+      isActive: true,
+      img: "./products/p-img-3.png",
+       image:"./logo-img/Group-star 133.png",
+      description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      oldPrice: "$70.00",
+      newPrice: "$50.00",
+     rating: "review (4)",
+    },
+    {
+      id: 14,
+      isActive: true,
+      img: "./products/p-img-3.png",
+       image:"./logo-img/Group-star 133.png",
+      description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      oldPrice: "$150.00",
+      newPrice: "$120.00",
+     rating: "review (4)",
+    },
+    {
+      id: 15,
+      isActive: false,
+     img: "./products/p-img-3.png",
+      image:"./logo-img/Group-star 133.png",
+      description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      oldPrice: "$400.00",
+      newPrice: "$350.00",
+     rating: "review (4)",
+    },
+    {
+      id: 16,
+      isActive: true,
+      img: "./products/p-img-2.png",
+       image:"./logo-img/Group-star 133.png",
+      description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      oldPrice: "$200.00",
+      newPrice: "$170.00",
+       rating: "review (4)",
+    },
+    {
+      id: 17,
+      isActive: true,
+       img: "./products/p-img-4.png",
+       image:"./logo-img/Group-star 133.png",
+      description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      oldPrice: "$130.00",
+      newPrice: "$100.00",
+       rating: "review (4)",
+    },
+    {
+      id: 18,
+      isActive: false,
+       img: "./products/p-img-2.png",
+        image:"./logo-img/Group-star 133.png",
+      description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      oldPrice: "$600.00",
+      newPrice: "$520.00",
+       rating: "review (4)",
+    },
+    {
+      id:19,
       isActive: true,
       img: "./products/p-img-3.png",
        image:"./logo-img/Group-star 133.png",
       description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
       oldPrice: "$499.00",
       newPrice: "$450.00",
-       rating: "review (4)"
+       rating: "review (4)",
+    },
+      {
+      id:20,
+      isActive: true,
+      img: "./products/p-img-4.png",
+       image:"./logo-img/Group-star 133.png",
+      description: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-One PC",
+      oldPrice: "$499.00",
+      newPrice: "$499.00",
+       rating: "review (4)",
     }
+
   ];
+ 
   const [page, setPage] = useState(2);
 
   return (
@@ -117,12 +221,9 @@ export default function FilteringProduct() {
           const {id,stock,img,image,description,oldPrice,newPrice,rating  } = product;
 
             return (
-              <div
-                key={id}
-                className=" p-3 hover:shadow-md transition h-[346px] w-[200px]"
-              >
+              <div  key={id}  className=" p-3 hover:shadow-md transition h-[346px] w-[200px]" >
                 <p className="text-green-600 text-xs mb-1">
-                  ● {stock ? "In stock" : "Out of stock"}
+                  ● {stock ?  "Out of stock" :"In stock" }
                 </p>
 
                 <div className="h-[120px] flex items-center justify-center">
@@ -155,7 +256,7 @@ export default function FilteringProduct() {
       
 
       {/* PAGINATION */}
-      <div className="flex justify-center items-center gap-2">
+      <div className="flex mt-10 justify-center items-center gap-2">
         {/* Prev */}
         <button className="w-8 h-8 rounded-full border flex items-center justify-center">
           ‹
@@ -181,8 +282,8 @@ export default function FilteringProduct() {
           ›
         </button>
       </div>
-      <div>
-               <p className='hidden md:block'>MSI has unveiled the Prestige Series line of business-class and gaming notebooks. Tuned for color accuracy, the Prestige Series also leverages True Color Technology, which allows users to adjust the display profile to best fit their computing needs.
+      <div className='hidden md:block mt-20 text-gray-300'>
+               <p>MSI has unveiled the Prestige Series line of business-class and gaming notebooks. Tuned for color accuracy, the Prestige Series also leverages True Color Technology, which allows users to adjust the display profile to best fit their computing needs.
 
 There are six different screen profiles, which are tuned for gaming, reducing eye fatigue, sRGB color accuracy, increasing clarity for words and lines, reducing harmful blue light, and optimizing contrast for watching movies.
 Given the various display profiles and discrete graphics chip, the Prestige Series notebooks can be used for various design work as well as for office tasks given that the screen can be adjusted for better clarity, color accuracy, or for eye strain reduction. Users working with video or 3D rendering will appreciate the     movie mode for which contrast is increased.
