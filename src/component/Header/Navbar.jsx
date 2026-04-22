@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className='md:hidden'>
         <MobileNavbar></MobileNavbar>
       </div>
-     <div className='lg:block'>
+     <div className='lg:block '>
        <Navbarb></Navbarb>
      </div>
     

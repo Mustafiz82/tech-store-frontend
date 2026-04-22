@@ -2,7 +2,7 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/Header/Navbar";
 import Footer from "@/component/Footer/Footer";
-import MobileNavbar from "@/component/Header/MobileNavbar";
+
 import Support from "@/component/Footer/Support";
 
 const geistSans = Geist({
@@ -33,10 +33,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${poppins.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar>
-        <MobileNavbar></MobileNavbar>
-     
-        </Navbar>
+        <Navbar></Navbar>
         <main>
           {children}
         </main>
