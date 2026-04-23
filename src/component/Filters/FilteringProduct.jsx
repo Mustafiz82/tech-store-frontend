@@ -214,9 +214,9 @@ export default function FilteringProduct() {
   const [page, setPage] = useState(2);
 
   return (
-    <div >
+    <div className="max-w-7xl mx-auto px-4 ">
        {/* Products */}
-        <div className=" grid grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
           {products.map((product) => {
           const {id,stock,img,image,description,oldPrice,newPrice,rating  } = product;
 

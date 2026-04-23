@@ -209,7 +209,7 @@ export default function ShoppingPage() {
                     className="w-full border rounded px-3 py-2 mt-1"
                   />
 
-                  <button className="w-full mt-3 border-2 border-blue-500 text-blue-600 py-2 rounded-full hover:bg-blue-500 hover:text-white">
+                  <button className="w-full mt-3 font-bold border-2 border-blue-5800 text-blue-800 py-2 rounded-full hover:bg-blue-800 hover:text-white">
                     Apply Discount
                   </button>
                 </div>

@@ -28,7 +28,7 @@ export default function OrderSummary({ items }) {
 
             <div className="text-sm">
               <p className="font-medium">{item.name}</p>
-              <p className="text-gray-500">
+              <p className="text-gray-800">
                 Qty {item.qty} • ${item.price}
               </p>
             </div>
