@@ -6,6 +6,8 @@
 import Filter from "@/component/Filters/Filter";
 import FilterBy from "@/component/Filters/FilterBy";
 import FilteringProduct from "@/component/Filters/FilteringProduct";
+import Singleproduct from "@/component/Filters/Singleproduct";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { FiChevronDown, FiGrid, FiMenu } from "react-icons/fi";
@@ -18,6 +20,12 @@ const Page = () => {
    const changePosition=()=>{
   setposition(!position)
 
+  
+
+ }
+ const [open,setOpen]=useState(false);
+ const menuOpen=()=>{
+  setOpen(!open)
  }
 
   
@@ -39,18 +47,25 @@ const Page = () => {
 
         {/* mobile */}
         <div className='md:hidden relative  flex justify-center gap-10 mt-10  items-center max-sm:pr-5 '>
-         <div  className="flex justify-center  px-4 py-2   border border-gray-300 rounded-md items-center font-bold text-xl text-gray-500 gap-5">Filter By <button
+         <div  className="flex justify-center  px-4 py-2   border border-gray-300 rounded-md items-center font-bold text-xl text-gray-500 gap-5">Filter By <div
         onClick={() => change(!value)}
         className="px-4 py-2  flex justify-between items-center">   {
         value ? (
-          <span className="absolute top-14 left-0 w-[300px] px-4 py-2 z-50">
+          <span   className={`fixed top-56 left-0  w-[260px] bg-white shadow-lg z-50 transform transition-transform duration-200 ${
+          value ? "translate-x-6" : "-translate-x-full"
+        }`}>
             <FilterBy></FilterBy>
           </span> ): <span>  
         <FiChevronDown className={`${value ? "rotate-180" : ""}`} /></span>
       }
       
-      </button>
       </div>
+      </div>
+
+        {/* Sidebar */}
+       
+           
+          
                 <div className="px-4 py-2  border border-gray-300">
                    {
                        <button  onClick={()=>changePosition()}>{position?  <span className="flex px-3 text-xl font-bold items-center gap-2">
@@ -127,7 +142,7 @@ const Page = () => {
             <button className="p-2 border rounded hover:bg-gray-100">
               <FiGrid size={16} />
             </button>
-            <button className="p-2 border rounded hover:bg-gray-100">
+            <button className="p-2 border rounded hover:bg-gray-100"  onClick={()=>menuOpen()}>
               <FiMenu size={16} />
             </button>
           </div>
@@ -155,7 +170,11 @@ const Page = () => {
       </div>
     </div>
           <div>
-            <FilteringProduct />
+            {
+              open?  <FilteringProduct />:<Singleproduct></Singleproduct>
+            }
+          
+            
           </div>
             <div  className="md:hidden mt-10 block">
                 <Filter/>
