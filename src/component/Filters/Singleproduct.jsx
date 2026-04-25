@@ -115,15 +115,15 @@ const Singleproduct = () => {
      
  return (
         <div>
-            <div className='max-w-7xl mx-auto  px-4 overflow-hidden mb-20'>
+            <div >
                 
-                <div  className='md:flex md:justify-center  md:mt-0 mt-10 gap-5 '>
+                <div  className='md:flex md:justify-center w-full  md:mt-0 mt-10 gap-5 '>
                 
                           <div>
                           
-                            <div className="space-y-6 p-4">
+                            <div className="space-y-6">
                          {products.slice(0,6).map((item) => (
-                      <div  key={item.id} className="w-full border border-gray-200 bg-white  p-4 flex flex-col md:flex-row gap-6 items-center"  >
+                      <div  key={item.id} className="w-full border border-gray-200 bg-white   p-4 flex flex-col md:flex-row gap-6 items-center"  >
        
                       <div className=''>
                

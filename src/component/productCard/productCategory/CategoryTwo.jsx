@@ -112,7 +112,7 @@ const CategoryTwo = () => {
        <div>
     <div >
   
-   <div className="relative w-full h-[200px] block md:hidden overflow-hidden rounded-lg">
+   <div className="relative my-10 w-full h-[200px] block md:hidden overflow-hidden rounded-lg">
       <img 
           src="/products/aside1.png"
            alt="MSI Laptops"

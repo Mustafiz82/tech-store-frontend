@@ -9,13 +9,13 @@ const ProductList = ({ product }) => {
        const {id,stock,img,image,description,oldPrice,newPrice,rating  } = product;
 
   return (
-    <div className="grid md:grid-cols-5 md:mt-4 gap-5">
+    <div>
         {/* Products */}
-        <div className="col-span-4 grid grid-cols-2 lg:grid-cols-5 gap-5">
+        <div >
          
               <div
                 key={id}
-                className=" hover:shadow-md transition h-[346px] w-[200px]"
+                className=" hover:shadow-md transition mt-5 h-[346px] w-[200px]"
               >
                 <p className="text-green-600 text-xs mb-1">
                   ● {stock ? "In stock" : "Out of stock"}

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Dashboard() {
   return (
-    <div className="bg-gray-100 min-h-screen py-8">
+    <div className="bg-white min-h-screen py-8">
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Breadcrumb */}

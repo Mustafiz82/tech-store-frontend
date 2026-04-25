@@ -111,7 +111,7 @@ const CategoryOne = () => {
         <div>
     <div >
   {/* mobile */}
-     <div className="relative w-full h-[200px] block md:hidden overflow-hidden rounded-lg">
+     <div className="relative w-full h-[200px] my-10 block md:hidden overflow-hidden rounded-lg">
       <img 
           src="/products/aside1.png"
            alt="MSI Laptops"

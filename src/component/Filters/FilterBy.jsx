@@ -27,7 +27,7 @@ const FilterBy = () => {
     return (
         <div>
               {/* FILTER BOX */}
-      <div className="w-[300px] bg-gray-100 p-5 rounded-lg">
+      <div className="w-[300px] bg-[#F5F7FF] p-5 rounded-lg">
         
         {/* HEADER (MAIN DROPDOWN) */}
         <button

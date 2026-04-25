@@ -8,7 +8,7 @@ const MobileNavbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className=" ">
+    <div className="sticky top-0 right-0 left-0">
       {/* Navbar */}
       <div className="bg-blue-600 max-w-7xl mx-auto px-10 py-4 flex items-center gap-3">
 
@@ -37,7 +37,8 @@ const MobileNavbar = () => {
         </div>
 
         {/* User */}
-        <User className="text-white w-6 h-6" />
+        
+        <img src="./icon/5.png" alt="icon" />
       </div>
 
       {/* Sidebar */}

@@ -6,7 +6,7 @@ import Navbarb from './Hero/Nabvarb';
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='sticky top-0 z-50'>
       <div className='md:hidden'>
         <MobileNavbar></MobileNavbar>
       </div>

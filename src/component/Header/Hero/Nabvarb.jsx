@@ -5,7 +5,8 @@ import { Search, ShoppingCart } from "lucide-react";
 
 const Navbarb = () => {
   return (
-    <div className="hidden border-b-gray-00  md:flex items-center justify-between py-4  xl:px-40 lg:px-28 sm:px-20 px-5 bg-white shadow-sm">
+   <div className="bg-white shadow-sm border-b-gray-100  sticky top-0">
+     <div className="hidden   md:flex items-center justify-between py-6   max-w-7xl mx-auto  px-4 ">
 
       {/* Left: Logo */}
       <div className="flex items-center gap-3">
@@ -55,6 +56,7 @@ const Navbarb = () => {
         />
       </div>
     </div>
+   </div>
   );
 };
 

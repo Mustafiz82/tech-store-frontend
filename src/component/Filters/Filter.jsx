@@ -12,7 +12,7 @@ export default function Filter() {
   return (
     <div className="space-y-5">
       {/* EXTRA SIDEBAR */}
-      <div className="md:w-[300px] w-full  bg-gray-100 p-5 rounded-lg text-center">
+      <div className="md:w-[300px] w-full  bg-[#F5F7FF] p-5 rounded-lg text-center">
         <h3 className="font-bold mb-3">Brands</h3>
         <button className="px-10 py-2 border rounded-full">
           All Brands
@@ -29,13 +29,13 @@ export default function Filter() {
       </div>
 
       {/* COMPARE */}
-      <div className="md:w-[300px] w-full  bg-gray-100 text-center py-10 px-5 rounded-lg">
+      <div className="md:w-[300px] w-full  bg-[#F5F7FF] text-center py-10 px-5 rounded-lg">
         <h3 className="font-bold">Compare Products</h3>
         <p>You have no items to compare.</p>
       </div>
 
       {/* WISHLIST */}
-      <div className="md:w-[300px] w-full  bg-gray-100 text-center py-10 px-5 rounded-lg">
+      <div className="md:w-[300px] w-full  bg-[#F5F7FF] text-center py-10 px-5 rounded-lg">
         <h3 className="font-bold">My Wish List</h3>
         <p>You have no items in your wish list.</p>
       </div>

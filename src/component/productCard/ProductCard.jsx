@@ -120,15 +120,20 @@ const ProductCard = () => {
 
       
         <div className=" max-w-7xl mx-auto px-4 py-10 ">
+
+              <div className="md:flex justify-between my-5">
+                <h2 className="text-2xl font-bold">New Products</h2>
+                <a className="text-sm text-blue-500 " href="#">See All New Products</a>
+              </div>
       <Swiper
      
         modules={[Navigation, Autoplay,Pagination]}
         navigation
-        autoplay={{ delay: 2500 }}
+        autoplay={{ delay: 3000 }}
         loop={true}
-        spaceBetween={16}
+        spaceBetween={0}
         breakpoints={{
-          0: { slidesPerView: 1.2 },
+          0: { slidesPerView: 2 },
           640: { slidesPerView: 2 },
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
@@ -141,12 +146,13 @@ const ProductCard = () => {
           <SwiperSlide  key={item.id}>
             
             {/* Card */}
-            <div className="w-[234px] h-[346px]  p-4 transition">
+            <div className="w-[200px] h-[346px]  transition">
+          
               
             <div className="flex items-center justify-center">  {/* Image */}
               <img
                 src={item.img}
-                className="h-auto w-36 object-cover rounded"
+                className="h-auto  object-cover rounded"
               /></div>
                     {/* ⭐ Stars */}
               <div className=" p-6 w-[185px] flex justify-center items-center h-[85px] mt-6 items-center">

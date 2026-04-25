@@ -87,7 +87,7 @@ const CardItem = () => {
     <div className=" max-w-7xl mx-auto px-4 pt-10 my-12 ">
 
       {/* Promo Bar */}
-      <div className="bg-[#F5F7FF] text-center flex justify-center items-center py-5 gap-2">
+      <div className="bg-[#F5F7FF] text-center flex justify-center items-center px-2 py-5 gap-2">
         <img src="./logo-img/zip.png" alt="" />
         <p className='text-xl '><span className="text-[#00AEB8] text-xl">|</span>  own it now, up to 6 months interest free</p>
       </div>

@@ -46,12 +46,12 @@ const Page = () => {
         
 
         {/* mobile */}
-        <div className='md:hidden relative  flex justify-center gap-10 mt-10  items-center max-sm:pr-5 '>
+        <div className='md:hidden relative  flex justify-center gap-5 mt-10  items-center max-sm:pr-5 '>
          <div  className="flex justify-center  px-4 py-2   border border-gray-300 rounded-md items-center font-bold text-xl text-gray-500 gap-5">Filter By <div
         onClick={() => change(!value)}
-        className="px-4 py-2  flex justify-between items-center">   {
+        className="px-3 py-2  flex justify-between items-center">   {
         value ? (
-          <span   className={`fixed top-56 left-0  w-[260px] bg-white shadow-lg z-50 transform transition-transform duration-200 ${
+          <span   className={`fixed top-18 left-0  w-[300px] bg-white shadow-lg z-50 transform transition-transform duration-200 ${
           value ? "translate-x-6" : "-translate-x-full"
         }`}>
             <FilterBy></FilterBy>
@@ -173,8 +173,7 @@ const Page = () => {
             {
               open?  <FilteringProduct />:<Singleproduct></Singleproduct>
             }
-          
-            
+
           </div>
             <div  className="md:hidden mt-10 block">
                 <Filter/>

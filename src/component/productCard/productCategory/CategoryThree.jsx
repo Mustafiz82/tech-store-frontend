@@ -84,7 +84,7 @@ const CategoryThree = () => {
             <div>
     <div >
   
-   <div className="relative w-full h-[200px] block md:hidden overflow-hidden rounded-lg">
+   <div className="relative w-full my-10 h-[200px] block md:hidden overflow-hidden rounded-lg">
       <img 
           src="/products/aside1.png"
            alt="MSI Laptops"
