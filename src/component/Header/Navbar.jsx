@@ -2,7 +2,8 @@
 
 import React from 'react';
 import MobileNavbar from './MobileNavbar';
-import Navbarb from './Hero/Nabvarb';
+
+import NavbarDesk from './Hero/NavbarDesk';
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
         <MobileNavbar></MobileNavbar>
       </div>
      <div className='lg:block '>
-       <Navbarb></Navbarb>
+      <NavbarDesk></NavbarDesk>
      </div>
     
     </div>

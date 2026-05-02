@@ -7,7 +7,6 @@ import Filter from "@/component/Filters/Filter";
 import FilterBy from "@/component/Filters/FilterBy";
 import FilteringProduct from "@/component/Filters/FilteringProduct";
 import Singleproduct from "@/component/Filters/Singleproduct";
-import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { FiChevronDown, FiGrid, FiMenu } from "react-icons/fi";
