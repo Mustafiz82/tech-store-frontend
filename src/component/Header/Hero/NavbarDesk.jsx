@@ -110,10 +110,12 @@ const NavbarDesk = () => {
 
           {/* Cart */}
           <div className="relative cursor-pointer group">
+            <Link href="./shoppingcart">
             <ShoppingCart className="w-5 h-5 text-gray-600 group-hover:text-blue-600" />
             <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-[10px] px-1.5 py-0.5 rounded-full">
               2
             </span>
+            </Link>
           </div>
 
           {/* AUTH SECTION */}
@@ -134,7 +136,7 @@ const NavbarDesk = () => {
                   onMouseLeave={() => setIsOpen(false)}
                 >
                   <div className="px-4 py-2 border-b border-gray-50">
-                    <p className="text-xs text-gray-500">Signed in as</p>
+                    <p className="text-xs text-green-500">Online</p>
                     <p className="text-sm font-bold truncate">{user?.email}</p>
                   </div>
 
@@ -146,7 +148,7 @@ const NavbarDesk = () => {
                   </Link>
 
                   <Link 
-                    href="/dashboard/profile" 
+                    href="/dashboard" 
                     className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 transition"
                   >
                     <User size={16} /> My Profile

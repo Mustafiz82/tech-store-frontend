@@ -119,12 +119,12 @@ const MobileNavbar = () => {
         </div>
 
         {/* Cart */}
-        <div className="relative">
-          <ShoppingCart className="text-white w-6 h-6" />
+       
+       <Link href="./shoppingcart" className="relative">   <ShoppingCart className="text-white w-6 h-6" />
           <span className="absolute -top-2 -right-2 bg-white text-blue-600 text-[10px] px-1 rounded-full font-bold">
             2
-          </span>
-        </div>
+          </span></Link>
+        
 
         {/* Top Bar User Profile / Login Link */}
         {user ? (
@@ -190,7 +190,7 @@ const MobileNavbar = () => {
                 </li>
                 <li className="flex items-center gap-3 hover:text-blue-600">
                   <User size={18} />
-                  <Link href="/dashboard/profile" onClick={closeSidebar}>My Profile</Link>
+                  <Link href="/dashboard" onClick={closeSidebar}>My Profile</Link>
                 </li>
               </div>
             )}

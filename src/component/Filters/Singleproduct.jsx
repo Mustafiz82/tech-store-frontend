@@ -169,7 +169,7 @@ const Singleproduct = () => {
 
             <div className='flex mt-5 justify-between'>
               {/* Button */}
-            <button className="px-4 py-2  border-2 font-bold border-blue-800 text-blue-800 rounded-full hover:bg-blue-800 hover:text-blue-800 transition">
+            <button className="px-4 py-2  border-2 font-bold border-blue-800 text-blue-800 rounded-full transition">
               Add To Cart
             </button>
              <div className="flex gap-3 mt-4 text-gray-400">
