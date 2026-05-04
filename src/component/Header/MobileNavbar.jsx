@@ -174,11 +174,11 @@ const MobileNavbar = () => {
         <div className="flex flex-col h-full justify-between pb-20">
           <ul className="p-5 space-y-5 text-gray-700 font-medium">
             {/* Category Links */}
-            <li className="hover:text-blue-600"><Link href="/laptops" onClick={closeSidebar}>Laptops</Link></li>
-            <li className="hover:text-blue-600"><Link href="/desktops" onClick={closeSidebar}>Desktop PCs</Link></li>
-            <li className="hover:text-blue-600"><Link href="/parts" onClick={closeSidebar}>PC Parts</Link></li>
-            <li className="hover:text-blue-600"><Link href="/repairs" onClick={closeSidebar}>Repairs</Link></li>
-            <li className="text-blue-600 font-bold border-b pb-2"><Link href="/deals" onClick={closeSidebar}>Our Deals</Link></li>
+            <li className="hover:text-blue-600"><Link href="/" onClick={closeSidebar}>Laptops</Link></li>
+            <li className="hover:text-blue-600"><Link href="/" onClick={closeSidebar}>Desktop PCs</Link></li>
+            <li className="hover:text-blue-600"><Link href="/" onClick={closeSidebar}>PC Parts</Link></li>
+            <li className="hover:text-blue-600"><Link href="/" onClick={closeSidebar}>Repairs</Link></li>
+            <li className="text-blue-600 font-bold border-b pb-2"><Link href="/" onClick={closeSidebar}>Our Deals</Link></li>
 
             {/* DASHBOARD SECTION (Only if logged in) */}
             {user && (

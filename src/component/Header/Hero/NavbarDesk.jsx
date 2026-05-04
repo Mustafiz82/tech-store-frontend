@@ -91,14 +91,14 @@ const NavbarDesk = () => {
 
         {/* Middle: Menu */}
         <div className="flex items-center gap-6 text-sm font-medium text-gray-700">
-          <Link href="/laptops" className="hover:text-blue-600">Laptops</Link>
-          <Link href="/desktops" className="hover:text-blue-600">Desktop PCs</Link>
-          <Link href="/pc-parts" className="hover:text-blue-600">PC Parts</Link>
-          <Link href="/repairs" className="hover:text-blue-600">Repairs</Link>
+          <Link href="/" className="hover:text-blue-600">Laptops</Link>
+          <Link href="/" className="hover:text-blue-600">Desktop PCs</Link>
+          <Link href="/" className="hover:text-blue-600">PC Parts</Link>
+          <Link href="/" className="hover:text-blue-600">Repairs</Link>
 
           <Link
-            href="/deals"
-            className="ml-2 px-4 py-1 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition"
+            href="/"
+            className="ml-2 px-4 py-1 border border-blue-600 text-blue-600 rounded-full "
           >
             Our Deals
           </Link>

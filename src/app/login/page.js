@@ -444,7 +444,7 @@ const Page = () => {
                 required 
               
                 placeholder={showPassword ? "" : "Enter password"}
-                  onChange={(e) => setQuery(e.target.value)}
+                  
                 className="w-full mt-2 px-4 h-[42px] border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500" 
               />
               <button
