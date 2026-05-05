@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FiEye, FiGrid, FiHeart, FiMenu, FiRepeat } from 'react-icons/fi';
-import FilterBy from './FilterBy';
+
 
 const Singleproduct = () => {
 

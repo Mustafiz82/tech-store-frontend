@@ -1,45 +1,4 @@
-// "use client";
-// import { getAuth } from "firebase/auth";
-// import { createContext, useContext, useState } from "react";
-// import app from "./firebase.config";
-// import {  signInWithEmailAndPassword , GoogleAuthProvider,signInWithPopup} from "firebase/auth";
 
-
-// const provider = new GoogleAuthProvider();
-
-// const AuthContext = createContext();
-
-// const auth=getAuth(app)
-
-// export const AuthProvider = ({ children }) => {
-  
- 
-//  const loginUser = (email, password) => {
-//     return  signInWithEmailAndPassword(auth, email, password)
-
-    
-      
-   
-//   };
-
-//   const google=()=>{
-//     return signInWithPopup(auth, provider)
-//   }
-
-
-
-
-
-//   const value = {loginUser,google};
-
-//   return (
-//     <AuthContext.Provider value={value}>
-//       {children}
-//     </AuthContext.Provider>
-//   );
-// };
-
-// export const useAuth = () => useContext(AuthContext);
 "use client";
 import { createContext, useContext, useEffect, useState } from "react";
 import { 

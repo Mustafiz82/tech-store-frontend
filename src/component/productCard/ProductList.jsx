@@ -2,8 +2,7 @@
 
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
+
 
 const ProductList = ({ product }) => {
        const {id,stock,img,image,description,oldPrice,newPrice,rating  } = product;
